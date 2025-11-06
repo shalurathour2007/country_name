@@ -1,0 +1,76 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(120deg, #dfe9f3, #ffffff);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #0056b3;
+  margin-bottom: 25px;
+}
+
+.table-container {
+  overflow-x: auto;
+  max-height: 600px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+}
+
+.country-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+.country-table th,
+.country-table td {
+  text-align: left;
+  padding: 12px 15px;
+  border: 1px solid #007bff;
+  font-size: 15px;
+}
+
+.country-table th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.country-table tr:nth-child(even) {
+  background-color: #f0f8ff;
+}
+
+.country-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.country-table tr:hover {
+  background-color: #cce5ff;
+  transition: background-color 0.3s;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+  .country-table th,
+  .country-table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
